@@ -22,7 +22,15 @@
     </header>
 
     <main>
-
+        <div class="container">
+            <form action="" method="get">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" class="form-control" placeholder="Inserisci la tua email">
+                </div>
+                <button type="submit" class="btn btn-primary">Clicca per inviare</button>
+            </form>
+        </div>
     </main>
 
     <footer>
