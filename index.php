@@ -4,7 +4,16 @@ var_dump(isset($_GET['email']));
 
 $email = $_GET['email'];
 
+function emailCheck($email)
+{
+    if (str_contains($email, '.') && str_contains($email, '@')) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
+var_dump(emailCheck($email));
 ?>
 
 
