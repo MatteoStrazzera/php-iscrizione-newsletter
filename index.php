@@ -14,6 +14,19 @@ function emailCheck($email)
 }
 
 var_dump(emailCheck($email));
+
+$emailChecked = emailCheck($email);
+
+function messageValidation($emailChecked)
+{
+    if ($emailChecked == true) {
+        return 'Email verificata';
+    } else {
+        return 'Ops! Qualcosa non va bene';
+    }
+}
+
+$message = messageValidation($emailChecked);
 ?>
 
 
@@ -42,6 +55,9 @@ var_dump(emailCheck($email));
                 </div>
                 <button type="submit" class="btn btn-primary">Clicca per inviare</button>
             </form>
+        </div>
+        <div class="container">
+            <span><?php echo $message ?></span>
         </div>
     </main>
 
