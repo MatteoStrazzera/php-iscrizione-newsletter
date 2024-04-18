@@ -1,5 +1,8 @@
 <?php
+var_dump($_GET);
+var_dump(isset($_GET['email']));
 
+$email = $_GET['email'];
 
 
 ?>
